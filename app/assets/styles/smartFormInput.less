@@ -1,0 +1,48 @@
+// 引入
+@import 'base';
+
+.smart-form-group{
+    width: 100%;
+    margin: 0px auto 15px;
+    
+    border: 1px solid #ffffff;   
+    border-radius:7px; 
+    
+    &::after{
+        content:'';
+        display: block;
+        clear: both;
+    }
+    
+    .form-group-icon{
+        float:left;
+        width: 12%;
+        color: @fontColor;
+        line-height: 44px;
+        text-align: center;
+        font-size: 1.3rem;
+        padding : 2px 5px 1px 5px;
+        
+        
+    }
+    
+    .form-group-field{
+        
+        font-size: 1.2rem;
+        float:left;
+        width: 88%;
+        margin-bottom: 0;
+        padding-left: 0;
+        
+        background-color: transparent;
+        border-color: transparent;
+        color: @fontColor;
+        
+        &:hover,&:focus{
+            
+            background-color: transparent;
+            border-color: transparent;
+            color: @fontColor;
+        }
+    }
+}
